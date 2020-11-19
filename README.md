@@ -16,7 +16,7 @@ As a result, many of the `date.Date` methods are implemented using the correspon
 ## Installation
 
 ```
-go get -u github.com/ganigeorgiev/date
+go get github.com/ganigeorgiev/date
 ```
 
 Example usage:
