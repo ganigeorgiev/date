@@ -1,4 +1,6 @@
 Date
+[![Go Report Card](https://goreportcard.com/badge/github.com/ganigeorgiev/date)](https://goreportcard.com/report/github.com/ganigeorgiev/date)
+[![GoDoc](https://godoc.org/github.com/ganigeorgiev/date?status.svg)](https://godoc.org/github.com/ganigeorgiev/date)
 ================================================================================
 
 Date is a small Go package that defines a `date.Date` struct, representing a date as in **ISO 8601** (eg. `2006-01-02`).
