@@ -249,7 +249,7 @@ func TestSub(t *testing.T) {
 	testScenarios := []struct {
 		dateA    Date
 		dateB    Date
-		expected float64
+		expected int
 	}{
 		{NewDate(2020, time.January, 1), NewDate(2020, time.January, 2), -1},
 		{NewDate(2020, time.January, 3), NewDate(2020, time.January, 1), 2},

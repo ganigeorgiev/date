@@ -74,8 +74,8 @@ func (d Date) Equal(d2 Date) bool {
 }
 
 // Sub returns the duration d-d2 in days.
-func (d Date) Sub(d2 Date) float64 {
-	return d.t.Sub(d2.t).Hours() / 24
+func (d Date) Sub(d2 Date) int {
+	return int(d.t.Sub(d2.t).Hours() / 24)
 }
 
 // Scan parses a value (usually from db). It implements sql.Scanner,
