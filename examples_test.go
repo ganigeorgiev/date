@@ -43,7 +43,7 @@ func ExampleDate_Day() {
 	d := date.NewDate(2020, time.January, 1)
 
 	fmt.Println(d.Day())
-	// Output: 2020-01-01
+	// Output: 1
 }
 
 func ExampleDate_Month() {
