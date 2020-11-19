@@ -8,6 +8,7 @@ import (
 
 // Date specifies a date without time (only year, month and day).
 // Internally it represents a time.Time instant with zero UTC time parts.
+// The zero value of the struct is represented as "0001-01-01".
 type Date struct {
 	t time.Time
 }
