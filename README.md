@@ -29,4 +29,4 @@ type User {
 }
 ```
 
-See the [package documentation](@todo) for more details and examples.
+See the [package documentation](https://pkg.go.dev/github.com/ganigeorgiev/date) for more details and examples.
