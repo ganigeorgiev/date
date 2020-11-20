@@ -24,7 +24,7 @@ Example usage:
 ```go
 import github.com/ganigeorgiev/date
 
-type User {
+type User struct {
     JoinDate date.Date
 }
 ```
