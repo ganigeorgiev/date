@@ -71,6 +71,23 @@ func TestParse(t *testing.T) {
 	}
 }
 
+func TestFormat(t *testing.T) {
+	testScenarios := []struct {
+		date     Date
+		layout   string
+		expected string
+	}{
+		{NewDate(2020, time.January, 1), "January 02, 2006", "January 01, 2020"},
+		{NewDate(2020, time.December, 1), "Mon, 02 Jan 2006", "Tue, 01 Dec 2020"},
+	}
+
+	for _, scenario := range testScenarios {
+		if scenario.date.Format(scenario.layout) != scenario.expected {
+			t.Errorf("Expected %s, got %s", scenario.expected, scenario.date.String())
+		}
+	}
+}
+
 func TestString(t *testing.T) {
 	testScenarios := []struct {
 		date     Date

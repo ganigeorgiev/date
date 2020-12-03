@@ -28,6 +28,12 @@ func Parse(s string) (Date, error) {
 	return Date{t: t}, err
 }
 
+// Format returns a textual representation of the date value formatted
+// according to the specified layout (the same as in time.Time.Format).
+func (d Date) Format(layout string) string {
+	return d.t.Format(layout)
+}
+
 // String returns a string representing the date instant in ISO 8601
 // extended format (e.g. "2006-01-02").
 func (d Date) String() string {

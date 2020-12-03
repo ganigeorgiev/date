@@ -25,6 +25,14 @@ func ExampleParse() {
 	// Output: 2020-01-01
 }
 
+func ExampleDate_Format() {
+	d := date.NewDate(2020, time.December, 1)
+	s := d.Format("02 Jan 2006, Monday")
+
+	fmt.Println(s)
+	// Output: 01 Dec 2020, Tuesday
+}
+
 func ExampleDate_IsZero() {
 	d1 := date.Date{}
 	d2, _ := date.Parse("0001-01-01")
